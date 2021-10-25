@@ -1,0 +1,26 @@
+<h1>CART_LIST</h1>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>ITEM_ID</th>
+            <th>ITEM_NAME</th>
+            <th>ITEM_PRICE(Rs)</th>
+            <th>ITEM_DETAILS</th>
+            <th>UPDATE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of carts">
+            <td>{{c.id}}</td>
+            <td>{{c.itemName}}</td>
+            <td>{{c.itemPrice}}</td>
+            <td>{{c.itemDetails}}</td>
+            <td>
+                <button (click)="updateCart(c.id)">UPDATE</button>
+                <button (click)="deleteCart(c.id)">DELETE</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+<h1>UPDATE ITEM YOU WANT</h1>
+<form (ngSubmit)="onSubmit()">
+    
+    <label>Enter name of item</label>
+    <input type="text" [(ngModel)]='object.itemName' name=itemName><br/><br/>
+    <label>Enter price</label>
+    <input type="number" [(ngModel)]='object.itemPrice' name=itemPrice><br/><br/>
+    <label>Enter details</label>
+    <input type="text" [(ngModel)]='object.itemDetails' name=itemDetails><br/><br/>
+    <button type="submit">SUBMIT</button>
+</form>
